@@ -1,0 +1,6 @@
+Django>=3.2,<5.0
+psycopg2-binary>=2.8
+python-decouple>=3.3
+djangorestframework>=3.12
+# Optional: for CORS support
+django-cors-headers>=3.5

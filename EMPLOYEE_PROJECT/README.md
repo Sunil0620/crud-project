@@ -15,7 +15,9 @@ A full-stack Django project implementing **CRUD (Create, Read, Update, Delete)**
 - [API Endpoints](#api-endpoints)
 - [HTML Frontend (Optional)](#html-frontend-optional)
 - [Project Structure](#project-structure)
+- [Testing](#testing)
 - [Screenshots](#screenshots)
+- [Contributing](#contributing)
 - [License](#license)
 - [Author](#author)
 
@@ -61,7 +63,8 @@ A full-stack Django project implementing **CRUD (Create, Read, Update, Delete)**
 
     ```bash
     pip install -r requirements.txt
-    pip install djangorestframework psycopg2-binary python-decouple  # If not in requirements.txt
+    # If requirements.txt is missing, install manually:
+    pip install djangorestframework psycopg2-binary python-decouple
     ```
 
 4. **Configure PostgreSQL Database**
@@ -126,14 +129,18 @@ Navigate to `/employee/list/` to use the basic UI for managing records via forms
 
 ```text
 ├── EMPLOYEE_PROJECT/
+│   ├── LICENSE
 │   ├── manage.py
+│   ├── README.md
+│   ├── requirements.txt
+│   ├── .env
 │   ├── employee_project/
 │   │   ├── __init__.py
 │   │   ├── asgi.py
 │   │   ├── settings.py
 │   │   ├── urls.py
 │   │   ├── wsgi.py
-│   │   └── __pycache__/
+│   │   └── __pycache__/  # compiled files (hidden)
 │   └── employee_register/
 │       ├── __init__.py
 │       ├── admin.py
@@ -143,25 +150,42 @@ Navigate to `/employee/list/` to use the basic UI for managing records via forms
 │       ├── tests.py
 │       ├── urls.py
 │       ├── views.py
-│       ├── __pycache__/
+│       ├── __pycache__/  # compiled files (hidden)
 │       ├── migrations/
 │       │   ├── __init__.py
 │       │   ├── 0001_initial.py
-│       │   └── __pycache__/
+│       │   ├── 0002_rename_name_employee_full_name.py
+│       │   └── __pycache__/  # compiled files (hidden)
 │       └── templates/
 │           └── employee_register/
 │               ├── base.html
 │               ├── employee_form.html
 │               └── employee_list.html
-├── LICENSE
-└── README.md
 ```
+
+---
+
+## Testing
+
+To run tests, use:
+
+```bash
+python manage.py test
+```
+
+Add your own tests in `employee_register/tests.py` to ensure code quality and reliability.
 
 ---
 
 ## Screenshots
 
-Coming soon
+Screenshots coming soon! If you have screenshots of the UI or API in action, feel free to contribute.
+
+---
+
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements, bug fixes, or new features.
 
 ---
 
@@ -175,4 +199,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 **Sunil Saini**  
 [GitHub](https://github.com/Sunil0620)  
-[email](mailto:sunilsaini5652@gmail.com)
+[Email](mailto:sunilsaini5652@gmail.com)
