@@ -129,11 +129,11 @@ Navigate to `/employee/list/` to use the basic UI for managing records via forms
 
 ```text
 ├── EMPLOYEE_PROJECT/
+│   ├── .env
 │   ├── LICENSE
 │   ├── manage.py
 │   ├── README.md
 │   ├── requirements.txt
-│   ├── .env
 │   ├── employee_project/
 │   │   ├── __init__.py
 │   │   ├── asgi.py
