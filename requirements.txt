@@ -6,4 +6,3 @@ crispy-bootstrap5>=0.6
 django-crispy-forms>=1.9
 # Optional: for CORS support
 django-cors-headers>=3.5
-gunicorn
