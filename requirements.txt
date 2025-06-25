@@ -2,6 +2,7 @@ Django>=3.2,<5.0
 psycopg2-binary>=2.8
 python-decouple>=3.3
 djangorestframework>=3.12
+crispy-bootstrap5>=0.6
 django-crispy-forms>=1.9
 # Optional: for CORS support
 django-cors-headers>=3.5
